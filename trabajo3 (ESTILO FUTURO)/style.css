@@ -1,0 +1,89 @@
+:root {
+  text-align: center;
+  --color-background: #19d852;
+  --color-text: #1f83b1;
+  --color-primary: #4ecdc4;
+  --color-accent: #ff6b6b;
+  --color-secondary: #60cc17;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #332542, #223d20);
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 1px #000;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+h1::after,
+h2::after,
+h3::after {
+  content: "💪";
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-accent);
+}
+
+.card {
+  background-color: var(--color-secondary);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.section {
+  padding: 40px 0;
+  background-color: var(--color-secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
